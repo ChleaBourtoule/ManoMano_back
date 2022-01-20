@@ -36,20 +36,11 @@ listRouter.post("/", (req, res) => {
 });
 
 listRouter.put("/:id_list", (req, res) => {
-  // console.log(req);
   const id_list = req.params.id_list;
-  // console.log(id_list);
   List.update(Number(id_list), req.body).then((rep) =>
     rep ? res.status(200).json(req.body) : res.status(404)
   );
 });
-
-// listRouter.delete('/:id', async (req, res) => {
-//     console.log(req.params.id)
-//     const productListDeleted = await ProductList.deleteProductsFromList(req.params.id)
-//     const listDeleted = await List.deleteOneList(req.params.id);
-//     listDeleted ? res.sendStatus(204) : res.sendStatus(404);
-// });
 
 listRouter.delete("/:id_list", async (req, res, next) => {
   try {
