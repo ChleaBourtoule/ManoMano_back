@@ -1,16 +1,19 @@
-1 - Créer répertoire
+# ManoMano X Wild Code School Hackathon
 
-2 - Créer application express
+48h coding!
 
-npm init
-créer app.js
-install express
-utiliser express
-créer database express_auth
-install dotenv
-db-config.js
-install mysql2
-listen de l'app sur le port
+This project was to upgrade the UX on the ManoMano website B2C side and giving the ability to the customers to add more easily products on its wishlists.
 
-COUCOU HIBOU
+## Getting started with our repos
 
+This is our back repo.
+
+find our front repo here: https://github.com/Louya64/hackathon-ManoMano
+
+### git clone, npm install
+
+use the reset-db file to build your db
+
+insert .env file with your db informations (see .env.sample to know what to write)
+
+#### npm start
